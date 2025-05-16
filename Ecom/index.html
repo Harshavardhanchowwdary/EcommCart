@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huggy Mart</title>
+    <link rel="icon"
+        href="https://www.flaticon.com/free-icon/to-do-list_2387635?term=to+do+list&page=1&position=2&origin=tag" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ec974b09d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav
+        class="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 border-b border-gray-300 bg-white relative fixed-top transition-all shadow-lg fixed-top">
+        <a href="#Homepage" class="h-9 text-cyan-600 " id="Name">
+            Huggy Mart
+        </a>
+
+        <button aria-label="Menu" id="menu-toggle" class="sm:hidden">
+            <svg width="25" height="25" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="21" height="2.5" rx="2.75" fill="#007ced" />
+                <rect x="8" y="6" width="13" height="2.5" rx=".75" fill="#007ced" />
+                <rect x="6" y="13" width="15" height="2.5" rx=".75" fill="#007ced" />
+            </svg>
+        </button>
+
+        <div id="mobile-menu"
+            class="hidden absolute top-[60px] left-0 w-full bg-white shadow-md py-4 flex-col items-start gap-2 px-5 text-sm md:hidden">
+            <a href="#Homepage" class="block">Home</a>
+            <a href="#Products" class="block">Products</a>
+            <a href="#Contact" class="block">Contact</a>
+            <a href="cart.html" class="block">Cart</a>
+            <a href="Register.html"><button class="cursor-pointer px-6 py-2 mt-2   rounded-lg text-sm" id="Btncolor">
+                    Login
+                </button>
+            </a>
+        </div>
+
+        <div class="hidden sm:flex items-center gap-8">
+            <a href="#Homepage">Home</a>
+            <a href="#Products">All Products</a>
+            <a href="#Contact">Contact Us</a>
+            <a href="cart.html" class="block">Cart</a>
+            <div class="relative cursor-pointer">
+                <svg width="18" height="18" viewBox="0 0 14 14" fill="#007ced" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                        stroke="#615fff" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <button
+                    class="absolute -top-2 -right-3 text-xs text-white bg-cyan-500 w-[18px] h-[18px] rounded-full"></button>
+            </div>
+
+            <a href="Register.html"><button class="cursor-pointer px-6 py-2 mt-2   rounded-lg text-sm" id="Btncolor">
+                    Login
+                </button>
+            </a>
+        </div>
+    </nav>
+    <div class="container" id="Homepage">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 mb-4 " style="height: 100vh;">
+                <div class="bannercard d-flex flex-column justify-content-ceneter">
+                    <div class="bannerinnercard">
+                        <h1 class="heading">Welcome To Huggy Mart</h1>
+                        <br>
+                        <h1 class="content mb-2">Boost Your Organic Productivity By Using Our App</h1>
+                        <p class="para mb-3">Huggy Mart is a user-friendly mobile application designed to offer
+                            customers a convenient platform to purchase fresh
+                            vegetables online. It connects local farmers and vendors directly to customers,
+                            ensuring quality, affordability, and timely delivery of farm-fresh produce.</p>
+                        <div class="buttondiv d-flex flex-row justify-content-center gap-10">
+                            <a href="Register.html"><button class="getbutton rounded-md">Get Started</button></a>
+                            <a href="#whywearebest"><button class="getbutton1 rounded-md">Explore Us<i
+                                        class="fa-solid fa-arrow-right iconcolor"></i> </button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12">
+                <h1 class="CategoriesHeading text-center mb-2">All Categories</h1>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-2 " id="Products">
+                <div class="border border-gray-500/20 rounded-md md:px-4 px-3 py-2   catageoriesCard bg-yellow-500">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] bg-transparent imagsize"
+                            src="https://purepng.com/public/uploads/large/vegetables-btv.png" alt="Product Image" />
+                    </div>
+
+                    <div class="text-gray-500/60 text-sm">
+                        <p class="text-center para">vegetables</p>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-indigo-500">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-2">
+                <div class="border border-gray-500/20 rounded-md md:px-4 px-3 py-2   catageoriesCard bg-cyan-500">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] bg-transparent imagsize"
+                            src="https://purepng.com/public/uploads/thumbnail//mixed-color-fruits-yoo.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-gray-500/60 text-sm">
+                        <p class="text-center para">Fruits</p>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-indigo-500">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-2">
+                <div class="border border-gray-500/20 rounded-md md:px-4 px-3 py-2   catageoriesCard bg-green-500">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] bg-transparent imagsize"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-milk-bottlebottle-food-object-drink-milk-941524620567w4e7h.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-gray-500/60 text-sm">
+                        <p class="text-center para">Daily Products</p>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-indigo-500">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-3 p-2 mb-5">
+                <div class="border border-gray-500/20 rounded-md md:px-4 px-3 py-2   catageoriesCard bg-pink-500">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] bg-transparent imagsize"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-men-t-shirtclothingmen-t-shirtfashion-dress-shirt-cloth-tshirt-631522326839ydolv.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-gray-500/60 text-sm">
+                        <p class="text-center para">Fashion Lifestyle</p>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-indigo-500">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <h1 class="CategoriesHeading1 text-left text-cyan-600 mb-2">Demand Products</h1>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] " id="itemimage1"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-peach-fruits-with-leaffruitspeach-981524762026snprh.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Organic</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="Itemname1">Apple Fruit</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(4)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid1">
+                                $28 <span class="text-gray-500/60 md:text-sm text-xs line-through">$40</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage1','Itemname1','priceid1')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] pt-3" id="itemimage2"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-mangomangojuicy-stone-fruitindian-mangocommon-mango-1701527332023r1kqq.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Organic</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname2">Mango Fruit</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(5)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid2">
+                                $20 <span class="text-gray-500/60 md:text-sm text-xs line-through">$60</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage2','itemname2','priceid2')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] max-h-[120px] pt-3" id="itemimage3"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-tomatotomatotomatossalad-fruitred-fruit-1701527315977cvstp.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Organic</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname3">Tomato Vegetable</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(12)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid3">
+                                $10 <span class="text-gray-500/60 md:text-sm text-xs line-through">$60</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage3','itemname3','priceid3')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] max-h-[120px] pt-3" id="itemimage4"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-oniononionvegetablegenus-alliumallium-fistulosumonions-1701527266166v5hqs.png"
+                            alt="Product Image" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Organic</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname4">Onions</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(8)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid4">
+                                $10 <span class="text-gray-500/60 md:text-sm text-xs line-through">$60</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage4','itemname4','priceid4')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] max-h-[130px] pt-3" id="itemimage7"
+                            src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/Picture_library/1733210502286/zip/img/pc1.jpg "
+                            alt="Product Image" style="height: 100px;" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Mobile</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname7">Iqoo 13</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(18)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid7">
+                                $500 <span class="text-gray-500/60 md:text-sm text-xs line-through">$600</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage7','itemname7','priceid7')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-2 col-lg-2 p-2 ">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] max-h-[130px] pt-3" id="itemimage5"
+                            src="https://purepng.com/public/uploads/thumbnail//purepng.com-mens-stylish-shirt-bluebutton-front-shirtgarmentdressshirtfullmensstylishblue-1421526306983cfftq.png"
+                            alt="Product Image" style="height: 100px;" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Men Lifestyle</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname5">Men Shirt</p>
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(18)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid5">
+                                $50 <span class="text-gray-500/60 md:text-sm text-xs line-through">$600</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage5','itemname5','priceid5')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 p-2  d-flex flex-row justify-content-center mb-5">
+                <div class="border border-gray-500/20  rounded- md:px-4 px-3 py-2 bg-white max-w-56 shadow-lg">
+                    <div class="group cursor-pointer flex items-center justify-center px-2">
+                        <img class="group-hover:scale-105 transition max-w-[160px] max-h-[130px] pt-3" id="itemimage6"
+                            src="https://tse4.mm.bing.net/th?id=OIP.POrD_vlWnRt-4mW7J4QwyQHaEH&pid=Api&P=0&h=160"
+                            alt="Product Image" style="height: 100px;" />
+                    </div>
+
+                    <div class="text-cyan-600 text-sm">
+                        <p>Milk Packet</p>
+                        <p class="text-gray-700 font-medium text-lg truncate w-full" id="itemname6">Heritage</p>
+
+                        <div class="flex items-center gap-0.5">
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="#007ced"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.049.927c.3-.921 1.603-.921 1.902 0l1.294 3.983a1 1 0 0 0 .951.69h4.188c.969 0 1.371 1.24.588 1.81l-3.388 2.46a1 1 0 0 0-.364 1.118l1.295 3.983c.299.921-.756 1.688-1.54 1.118L9.589 13.63a1 1 0 0 0-1.176 0l-3.389 2.46c-.783.57-1.838-.197-1.539-1.118L4.78 10.99a1 1 0 0 0-.363-1.118L1.028 7.41c-.783-.57-.38-1.81.588-1.81h4.188a1 1 0 0 0 .95-.69z"
+                                    fill="#007ced" />
+                            </svg>
+                            <svg width="14" height="13" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.04894 0.927049C8.3483 0.00573802 9.6517 0.00574017 9.95106 0.927051L11.2451 4.90983C11.379 5.32185 11.763 5.60081 12.1962 5.60081H16.3839C17.3527 5.60081 17.7554 6.84043 16.9717 7.40983L13.5838 9.87132C13.2333 10.126 13.0866 10.5773 13.2205 10.9894L14.5146 14.9721C14.8139 15.8934 13.7595 16.6596 12.9757 16.0902L9.58778 13.6287C9.2373 13.374 8.7627 13.374 8.41221 13.6287L5.02426 16.0902C4.24054 16.6596 3.18607 15.8934 3.48542 14.9721L4.7795 10.9894C4.91338 10.5773 4.76672 10.126 4.41623 9.87132L1.02827 7.40983C0.244561 6.84043 0.647338 5.60081 1.61606 5.60081H5.8038C6.23703 5.60081 6.62099 5.32185 6.75486 4.90983L8.04894 0.927049Z"
+                                    fill="#007ced" fill-opacity="0.35" />
+                            </svg>
+                            <p>(18)</p>
+                        </div>
+
+                        <div class="flex items-end justify-between mt-2">
+                            <p class="md:text-xl text-base font-medium text-cyan-600" id="priceid6">
+                                $50 <span class="text-gray-500/60 md:text-sm text-xs line-through">$600</span>
+                            </p>
+                            <button
+                                class="flex items-center justify-center gap-1 bg-cyan-500 border border-cyan-300 md:w-[80px] w-[64px] h-[34px] rounded text-cyan-900 font-medium"
+                                onclick="addToCart('itemimage6','itemname6','priceid6')">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="#007ced"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M.583.583h2.333l1.564 7.81a1.17 1.17 0 0 0 1.166.94h5.67a1.17 1.17 0 0 0 1.167-.94l.933-4.893H3.5m2.333 8.75a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0m6.417 0a.583.583 0 1 1-1.167 0 .583.583 0 0 1 1.167 0"
+                                        stroke="#007ced" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 p-4" id="whywearebest">
+                <div class="whywearebest p-5 text-center d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="whyheadind">Why we are the best </h1>
+                    <p class="parawhycontent">We Delivery within 20mins from the Farmers.<i
+                            class="fa-solid fa-truck fa-beat deliverycolor"></i></p>
+                    <p class="parawhycontent">Our products directly from the farmers So that's why our customers were
+                        fully satisfied. This is our success trick and loyalty.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Voluptates nemo quae placeat, qui obcaecati omnis veniam voluptas blanditiis ab ullam.</p><br>
+                    <a href="#Contact"><button class="contactus ">contact Us</button></a>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-12 p-4 mb-5" style="height: 200vh;">
+                <div class="testnomials p-5">
+                    <h1 class="testnimials text-center">Our Satisfied Customers</h1>
+                    <div class="flex flex-wrap items-center justify-center gap-6 pt-14">
+                        <div
+                            class="text-sm w-80 border border-gray-500/60 pb-6 rounded-lg bg-cyan-400 shadow-[0px_4px_15px_0px] shadow-lg mt-5">
+                            <div class="flex flex-col items-center px-5 py-4 relative">
+                                <img class="h-24 w-24 absolute -top-14 rounded-full"
+                                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
+                                    alt="userImage1">
+                                <div class="pt-8 text-center">
+                                    <h1 class="text-lg font-medium text-gray-800">Donald Jackman</h1>
+                                    <p class="text-gray-800/60">Content Creator</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 px-6 text-center">I've been using imagify for nearly two years,
+                                primarily for Instagram, and it has been incredibly user-friendly, making my work much
+                                easier.</p>
+                            <div class="flex justify-center pt-4">
+                                <div class="flex gap-0.5">
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="text-sm w-80 border border-gray-500/60 pb-6 rounded-lg bg-cyan-400 shadow-[0px_4px_15px_0px] shadow-lg mt-5">
+                            <div class="flex flex-col items-center px-5 py-4 relative">
+                                <img class="h-24 w-24 absolute -top-14 rounded-full"
+                                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200"
+                                    alt="userImage2">
+                                <div class="pt-8 text-center">
+                                    <h1 class="text-lg font-medium text-gray-800">Richard Nelson</h1>
+                                    <p class="text-gray-800/90">Instagram Influencer</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 px-6 text-center">I've been using imagify for nearly two years,
+                                primarily for Instagram, and it has been incredibly user-friendly, making my work much
+                                easier.</p>
+                            <div class="flex justify-center pt-4">
+                                <div class="flex gap-0.5">
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="text-sm w-80 border border-gray-500/30 pb-6 rounded-lg bg-cyan-400 shadow-[0px_4px_15px_0px] shadow-lg mt-5">
+                            <div class="flex flex-col items-center px-5 py-4 relative">
+                                <img class="h-24 w-24 absolute -top-14 rounded-full"
+                                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop"
+                                    alt="userImage3">
+                                <div class="pt-8 text-center">
+                                    <h1 class="text-lg font-medium text-gray-800">James Washington</h1>
+                                    <p class="text-gray-800/80">Marketing Manager</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 px-6 text-center">I've been using imagify for nearly two years,
+                                primarily for Instagram, and it has been incredibly user-friendly, making my work much
+                                easier.</p>
+                            <div class="flex justify-center pt-4">
+                                <div class="flex gap-0.5">
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                    <svg width="18" height="18" viewBox="0 0 22 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.525.464a.5.5 0 0 1 .95 0l2.107 6.482a.5.5 0 0 0 .475.346h6.817a.5.5 0 0 1 .294.904l-5.515 4.007a.5.5 0 0 0-.181.559l2.106 6.483a.5.5 0 0 1-.77.559l-5.514-4.007a.5.5 0 0 0-.588 0l-5.514 4.007a.5.5 0 0 1-.77-.56l2.106-6.482a.5.5 0 0 0-.181-.56L.832 8.197a.5.5 0 0 1 .294-.904h6.817a.5.5 0 0 0 .475-.346z"
+                                            fill="#222" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fluid-container" id="Contact">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 p-4" id="Contact">
+                <footer class="px-6 md:px-16 lg:px-24 xl:px-32 pt-8 w-full text-gray-700  bg-green-200" id="teste">
+                    <div
+                        class="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500/30 pb-6">
+                        <div class="md:max-w-96">
+                            <a href="#Homepage" class="h-9 text-cyan-600 " id="Name">
+                                Huggy Mart
+                            </a>
+                            <p class="mt-6 text-sm">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.
+                            </p>
+                        </div>
+                        <div class="flex-1 flex items-start md:justify-end gap-20">
+                            <div>
+                                <h2 class="font-semibold mb-5 text-cyan-800">Huggy Mart</h2>
+                                <ul class="text-sm space-y-2">
+                                    <li><a href="#Homepage">Home</a></li>
+                                    <li><a href="#whywearebest">About us</a></li>
+                                    <li class="text-cyan-500">Contact us</li>
+
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="font-semibold mb-5 text-cyan-800">Get in touch</h2>
+                                <div class="text-sm space-y-2">
+                                    <p>+1-212-456-7890</p>
+                                    <p>Huggymart@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="pt-4 text-center text-xs md:text-sm pb-5 text-cyan-600">
+                        Copyright 2025 © HuggyMart . All Right Reserved.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="popupcard d-flex flex-row" id="popup">
+        <i class="fa-solid fa-circle-check checkicon"></i>
+        <p class="reis">Item added into cart</p>
+    </div>
+    <script>
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+            const menu = document.getElementById("mobile-menu");
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+                menu.classList.add("flex");
+            } else {
+                menu.classList.add("hidden");
+            }
+        });
+
+        function addToCart(imgId, nameId, priceId) {
+            const item = {
+                image: document.getElementById(imgId).src,
+                name: document.getElementById(nameId).textContent,
+                price: document.getElementById(priceId).textContent
+            };
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(item);
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            // Show popup
+            let popup = document.getElementById('popup');
+            popup.classList.add('openpopupcard');
+
+            // Hide after 2 seconds
+            setTimeout(() => {
+                popup.classList.remove('openpopupcard');
+            }, 2000);
+        }
+    </script>
+
+</body>
+
+</html>

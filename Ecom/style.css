@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #007ced;
+
+}
+
+#Name {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#Btncolor {
+    background-color: #007ced;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+#Btncolor:hover {
+    background-color: transparent;
+    border: 3px solid #007ced;
+    border-radius: 26px;
+    color: #222;
+
+}
+
+.bannercard {
+    margin-top: 20px;
+    background-image: url('https://img.freepik.com/free-photo/tomatoes-left-frame-with-copy-space-light-blue-surface_176474-207.jpg?uid=R188300346&ga=GA1.1.676912145.1723734268&semt=ais_hybrid&w=740');
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.bannerinnercard {
+    padding: 30px;
+
+    background-color: transparent;
+}
+
+.heading {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.content {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.getbutton {
+    background-color: #fff;
+    padding: 10px;
+    color: #222;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+
+}
+
+.getbutton1 {
+    border: 2px solid #222;
+    background-color: transparent;
+    color: #222;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.getbutton:hover {
+    background-color: transparent;
+    box-shadow: 0px 0px 10px #fff;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.getbutton1:hover {
+    box-shadow: 0px 0px 10px #222;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.iconcolor {
+    font-size: 13px;
+    color: #222;
+    margin-left: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.iconcolor:hover {
+    color: #fff;
+}
+
+.CategoriesHeading {
+    text-align: left;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.catageoriesCard {
+    text-align: center;
+    height: 140px;
+    margin: 5px;
+    color: #222;
+}
+
+.para {
+    color: #222;
+    font-weight: 500;
+}
+
+.imagsize {
+    height: 80px;
+    margin-top: 15px;
+    width: 90px;
+}
+
+#itemelemnt {
+    height: 280px;
+}
+
+.CategoriesHeading1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+
+.whywearebest {
+    background-image: url('assets/banner\ image..jpeg');
+    height: 100vh;
+    margin-bottom: 60px;
+    background-size: cover;
+}
+
+.whyheadind {
+    font-weight: 600;
+    font-size: 33px;
+    color: #222;
+
+    margin-bottom: 23px;
+}
+
+.parawhycontent {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007ced;
+}
+
+.deliverycolor {
+    color: #222;
+    margin-left: 8px;
+    font-size: 27px;
+}
+
+.contactus {
+    border: 2px solid #007ced;
+    background-color: transparent;
+    color: #222;
+    width: 140px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.contactus:hover {
+    box-shadow: 0px 0px 10px #222;
+    color: #007ced;
+    width: 140px;
+    border: 2px solid #007ced;
+    border-radius: 5px;
+}
+
+.testnimials {
+    font-weight: 600;
+    font-size: 30px;
+    color: #007ced;
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.popupcard {
+  position: fixed;
+  top: 10%;
+  left: 45%;
+  
+  background-color: #007ced;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.popupcard .checkicon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.popupcard.openpopupcard {
+  opacity: 1;
+  transform: translateY(0);
+}

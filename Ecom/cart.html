@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="icon"
+        href="https://www.flaticon.com/free-icon/to-do-list_2387635?term=to+do+list&page=1&position=2&origin=tag" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ec974b09d4.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="" style="height: 100vh;">
+    <div class="container d-flex flex-column justify-content-center">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 d-flex flex-row justify-content-center p-5">
+                <div class="cartitems  " id="cartitemscontainer">
+                    <h1 class="mainheading mb-5 ">Your Cart Items</h1>
+                    <a href="index.html"><button class="cartbutt1 mx-auto mb-5 justify-center ">Go Home</button></a>
+                    <ul class="idli " id="idli">
+                        <!-- <li class="cartcontainer">
+                            <img src="https://purepng.com/public/uploads/large/vegetables-btv.png" alt="" class="Imgsrc mx-auto">
+                            <p class="P">Apple Fruit</p> 
+                            <div class="price">
+                                <p class="itemprice">$<span id="itemprice">28</span></p>
+                            </div>
+                            <button class="cartbutt">remove</button>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // window.onload = function () {
+        //     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        //     const container = document.getElementById("idli");
+
+        //     cart.forEach(item => {
+        //         const li = document.createElement("li");
+        //         li.classList.add("cartcontainer");
+
+        //         const img = document.createElement("img");
+        //         img.src = item.image;
+        //         img.classList.add("Imgsrc", "mx-auto");
+        //         li.appendChild(img);
+
+        //         const name = document.createElement("p");
+        //         name.textContent = item.name;
+        //         name.classList.add("P");
+        //         li.appendChild(name);
+
+        //         const priceDiv = document.createElement("div");
+        //         priceDiv.classList.add("price");
+
+        //         const price = document.createElement("p");
+        //         price.classList.add("itemprice");
+        //         price.textContent = "$" + item.price;
+        //         priceDiv.appendChild(price);
+        //         li.appendChild(priceDiv);
+
+        //         const button = document.createElement("button");
+        //         button.classList.add("cartbutt");
+        //         button.textContent = "remove";
+        //         li.appendChild(button);
+
+        //         container.appendChild(li);
+        //     });
+        // };
+
+        function renderCart() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const container = document.getElementById("idli");
+            container.innerHTML = ""; // Clear existing items
+
+            cart.forEach((item, index) => {
+                const li = document.createElement("li");
+                li.classList.add("cartcontainer");
+
+                const img = document.createElement("img");
+                img.src = item.image;
+                img.classList.add("Imgsrc", "mx-auto");
+                li.appendChild(img);
+
+                const name = document.createElement("p");
+                name.textContent = item.name;
+                name.classList.add("P");
+                li.appendChild(name);
+
+                const priceDiv = document.createElement("div");
+                priceDiv.classList.add("price");
+
+                const price = document.createElement("p");
+                price.classList.add("itemprice");
+                price.textContent = "$" + item.price;
+                priceDiv.appendChild(price);
+                li.appendChild(priceDiv);
+
+                const button = document.createElement("button");
+                button.classList.add("cartbutt");
+                button.textContent = "Remove";
+
+                // ✅ Set the remove handler here
+                button.onclick = () => {
+                    removeCartItem(index);
+                };
+
+                li.appendChild(button);
+                container.appendChild(li);
+            });
+
+            if (cart.length === 0) {
+                container.innerHTML = "<p class='text-center'>Your cart is empty.</p>";
+            }
+        }
+
+        function removeCartItem(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1); // remove 1 item at that index
+            localStorage.setItem("cart", JSON.stringify(cart));
+            renderCart(); // refresh the cart display
+        }
+
+        // Load cart on page load
+        window.onload = renderCart;
+    </script>
+
+
+</body>
+
+</html>
